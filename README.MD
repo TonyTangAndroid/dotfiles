@@ -3,7 +3,7 @@ My dotfiles using Zinit.
 
 ## install
 ```sh
-git clone https://github.com/tyvsmith/dotfiles.git ~/.dotfiles
+git clone https://github.com/TonyTangAndroid/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./bootstrap/install
 ```
