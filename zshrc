@@ -148,6 +148,7 @@ zinit light-mode wait lucid is-snippet for \
 _source_local() {
     autoload -Uz compinit && compinit
     source ~/.dotfiles/zsh/functions.zsh
+    source ~/.dotfiles/zsh/functions_tony.zsh
     source ~/.dotfiles/zsh/aliases.zsh
     [ -f ~/.aliases.local ] && source ~/.aliases.local
     [ -f ~/.zshrc.local ] && source ~/.zshrc.local
