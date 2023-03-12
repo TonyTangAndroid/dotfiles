@@ -1,4 +1,4 @@
-# Ty's dotfiles
+# TonyTangAndroid's dotfiles
 My dotfiles using Zinit.
 
 ## install
