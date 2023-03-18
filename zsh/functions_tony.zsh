@@ -62,19 +62,19 @@ git status
 
 function adupl(){
 target=$1
-arc diff --update ${target} --plan-changes --nojira HEAD^
+arc diff --update ${target} --plan-changes --nojira @~1
 }
 
 # Update a diff
 function adu(){
 target=$1
-arc diff --update ${target} --nolint  HEAD^
+arc diff --update ${target} --nolint  @~1
 }
 
 # Update a diff
 function adul(){
 target=$1
-arc diff --update ${target} HEAD^
+arc diff --update ${target} @~1
 }
 
 # Update a diff
@@ -107,9 +107,9 @@ target=$1
 arc diff --update ${target} --nolint --nojira --plan-changes 
 }
 
-alias adcp='arc diff --create --nolint --plan-changes HEAD^ --nojira'
-alias adcpl='arc diff --create --plan-changes HEAD^ --nojira'
-alias preview='arc diff --only --nolint HEAD^ --nojira'
+alias adcp='arc diff --create --nolint --plan-changes @~1 --nojira'
+alias adcpl='arc diff --create --plan-changes @~1 --nojira'
+alias preview='arc diff --only --nolint @~1 --nojira'
 alias adcps='arc diff --create --plan-changes --nojira'
 
 alias amend='gaa && git commit --amend --no-edit'
